@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            textBox6 = new TextBox();
             label8 = new Label();
+            checkBox8 = new CheckBox();
             checkBox7 = new CheckBox();
             checkBox6 = new CheckBox();
             checkBox5 = new CheckBox();
@@ -67,12 +69,14 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.FromArgb(34, 34, 34);
+            splitContainer1.Panel1.Controls.Add(textBox6);
             splitContainer1.Panel1.Controls.Add(label8);
             splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint;
             // 
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.FromArgb(34, 34, 34);
+            splitContainer1.Panel2.Controls.Add(checkBox8);
             splitContainer1.Panel2.Controls.Add(checkBox7);
             splitContainer1.Panel2.Controls.Add(checkBox6);
             splitContainer1.Panel2.Controls.Add(checkBox5);
@@ -99,6 +103,16 @@
             splitContainer1.SplitterWidth = 1;
             splitContainer1.TabIndex = 0;
             // 
+            // textBox6
+            // 
+            textBox6.Font = new Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox6.Location = new Point(23, 94);
+            textBox6.Margin = new Padding(0, 3, 3, 3);
+            textBox6.Name = "textBox6";
+            textBox6.PlaceholderText = "ex: DA 4856";
+            textBox6.Size = new Size(314, 32);
+            textBox6.TabIndex = 1;
+            // 
             // label8
             // 
             label8.Dock = DockStyle.Top;
@@ -111,12 +125,23 @@
             label8.TabIndex = 0;
             label8.Text = "Forms";
             // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.ForeColor = SystemColors.Control;
+            checkBox8.Location = new Point(40, 498);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(83, 19);
+            checkBox8.TabIndex = 20;
+            checkBox8.Text = "Edit Profile";
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
             // checkBox7
             // 
             checkBox7.AutoSize = true;
             checkBox7.Font = new Font("Arial", 9F);
             checkBox7.ForeColor = SystemColors.Control;
-            checkBox7.Location = new Point(36, 149);
+            checkBox7.Location = new Point(41, 149);
             checkBox7.Name = "checkBox7";
             checkBox7.Size = new Size(70, 19);
             checkBox7.TabIndex = 19;
@@ -128,7 +153,7 @@
             checkBox6.AutoSize = true;
             checkBox6.Font = new Font("Arial", 9F);
             checkBox6.ForeColor = SystemColors.Control;
-            checkBox6.Location = new Point(137, 149);
+            checkBox6.Location = new Point(142, 149);
             checkBox6.Name = "checkBox6";
             checkBox6.Size = new Size(80, 19);
             checkBox6.TabIndex = 18;
@@ -138,7 +163,7 @@
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(268, 332);
+            checkBox5.Location = new Point(276, 332);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(15, 14);
             checkBox5.TabIndex = 17;
@@ -147,7 +172,7 @@
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(268, 392);
+            checkBox4.Location = new Point(276, 392);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(15, 14);
             checkBox4.TabIndex = 16;
@@ -156,7 +181,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(268, 452);
+            checkBox3.Location = new Point(276, 452);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(15, 14);
             checkBox3.TabIndex = 15;
@@ -165,7 +190,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(268, 272);
+            checkBox2.Location = new Point(276, 272);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(15, 14);
             checkBox2.TabIndex = 14;
@@ -174,7 +199,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(268, 212);
+            checkBox1.Location = new Point(276, 212);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 13;
@@ -185,7 +210,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 9F, FontStyle.Underline, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.Control;
-            label7.Location = new Point(253, 150);
+            label7.Location = new Point(258, 150);
             label7.Name = "label7";
             label7.Size = new Size(50, 15);
             label7.TabIndex = 12;
@@ -194,7 +219,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Arial", 9F);
-            textBox5.Location = new Point(35, 449);
+            textBox5.Location = new Point(40, 449);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(207, 21);
             textBox5.TabIndex = 11;
@@ -202,7 +227,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Arial", 9F);
-            textBox4.Location = new Point(35, 389);
+            textBox4.Location = new Point(40, 389);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(207, 21);
             textBox4.TabIndex = 10;
@@ -210,7 +235,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Arial", 9F);
-            textBox3.Location = new Point(35, 329);
+            textBox3.Location = new Point(40, 329);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(207, 21);
             textBox3.TabIndex = 9;
@@ -218,7 +243,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Arial", 9F);
-            textBox2.Location = new Point(35, 269);
+            textBox2.Location = new Point(40, 269);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(207, 21);
             textBox2.TabIndex = 8;
@@ -226,7 +251,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Arial", 9F);
-            textBox1.Location = new Point(35, 209);
+            textBox1.Location = new Point(40, 209);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(207, 21);
             textBox1.TabIndex = 7;
@@ -236,7 +261,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 9F);
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(35, 432);
+            label6.Location = new Point(40, 432);
             label6.Name = "label6";
             label6.Size = new Size(41, 15);
             label6.TabIndex = 6;
@@ -248,7 +273,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9F);
             label5.ForeColor = SystemColors.Control;
-            label5.Location = new Point(35, 372);
+            label5.Location = new Point(40, 372);
             label5.Name = "label5";
             label5.Size = new Size(35, 15);
             label5.TabIndex = 5;
@@ -260,7 +285,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9F);
             label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(35, 312);
+            label4.Location = new Point(40, 312);
             label4.Name = "label4";
             label4.Size = new Size(84, 15);
             label4.TabIndex = 4;
@@ -272,7 +297,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9F);
             label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(35, 252);
+            label3.Location = new Point(40, 252);
             label3.Name = "label3";
             label3.Size = new Size(82, 15);
             label3.TabIndex = 3;
@@ -284,7 +309,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 9F);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(35, 191);
+            label2.Location = new Point(40, 191);
             label2.Name = "label2";
             label2.Size = new Size(88, 15);
             label2.TabIndex = 2;
@@ -298,7 +323,7 @@
             comboBox1.Font = new Font("Arial", 9F);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Profile1", "Profile2", "Profile3" });
-            comboBox1.Location = new Point(35, 103);
+            comboBox1.Location = new Point(40, 103);
             comboBox1.Margin = new Padding(15, 3, 15, 3);
             comboBox1.Name = "comboBox1";
             comboBox1.RightToLeft = RightToLeft.No;
@@ -331,6 +356,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pubs Manager";
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -362,5 +388,7 @@
         private CheckBox checkBox2;
         private CheckBox checkBox1;
         private Label label8;
+        private CheckBox checkBox8;
+        private TextBox textBox6;
     }
 }
